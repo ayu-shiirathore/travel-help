@@ -38,6 +38,7 @@ const App = () => {
         .then((data) => {
             console.log(data); 
             setPlaces(data);
+            setFilteredPlaces([]);
             setIsLoading(false);
         })
     
@@ -56,6 +57,7 @@ const App = () => {
                     type={type}
                     setType={setType}
                     rating={rating}
+                    setRating={setRating}
                     />
                 </Grid>
                 <Grid item xs={12} md={8}>
